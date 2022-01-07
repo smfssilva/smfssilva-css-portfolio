@@ -250,6 +250,9 @@ Sidebar
   /* add later */
   transform: translateX(-100%);
 }
+.show-sidebar{
+  transform: translateX(0);
+}
 .sidebar-links{
   text-align: center;
 }
