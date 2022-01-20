@@ -577,8 +577,19 @@ Connect
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height:  100%;
   object-fit: cover;
+}
+.connect::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--clr-white); 
+  opacity: .7;
+  /* background: rgba(0, 0, 0, .7); */
 }
 /*
 =============== 
