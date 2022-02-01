@@ -741,6 +741,39 @@ Timeline
 Blog
 ===============
 */
+.bloc {
+  background: var(--clr-grey-10);
+}
+
+.card {
+  height: 27rem;
+  position: relative;
+  perspective: 1500px;
+}
+.card-side{
+  transition: all 1.5s linear;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.card-front {
+  background: red;
+  color: white;
+}
+.card-back{
+  background: blue;
+  color: white;
+  transform: rotateY(180deg);
+}
+.card:hover .card-front{
+  transform: rotateY(-180deg);
+}
+.card:hover .card-back{
+  transform: rotateY(0deg);
+}
 
 /*
 =============== 
